@@ -1,6 +1,7 @@
 
 vcf=$1
-
+mkdir tmp_filter
+cd tmp_filter
 
 #filter to keep variants that are genotyped in 50% of individuals
 vcftools --gzvcf $vcf --max-missing 0.5 --mac 3 --minQ 30 --recode --recode-INFO-all --out snps.raw.stage1
@@ -23,7 +24,10 @@ vcftools --vcf snps.raw.stage2.recode.vcf --remove lowDP.indv --recode --recode-
 #restrict data to variants called in high percentage of isolates
 vcftools --vcf snps.raw.stage3.recode.vcf --max-missing 0.95  --remove-indels --maf 0.05 --recode --recode-INFO-all --min-meanDP 20 --stdout | gzip -c > snps.filtered.vcf.gz
 
-
+mv snps.filtered.vcf.gz ../
+cd ../
+echo "SNP FILTERING COMPLETE"
+echo "filtered file : ${pwd}/snps.filtered.vcf.gz"
 
 
 
