@@ -1,6 +1,10 @@
 # manhattan-plots
 This repo provides a tutorial on how to create manhattan plots of Population genetics variation measures such as Fixative index(fst) and TajimaD values using Python
+# Description
+the repository contains scripts as well as sample datasets on which the these scripts can be tested on. datasets are in the data directory and comprises of snps data (vcf format) and a list of sample ids (population) saved in text files. Fst values are generated using vcftools which takes as inputs snp data and list of populations on which the comparision is being done . The practice dataset comprises of two subpopulations BAN and GAM.
 
+
+# Running the Pipeline
 
 ### Step 1: Clone or download the github repository
 git clone https://github.com/vappiah/manhattan-plots
@@ -17,10 +21,10 @@ ls data
 chmod +x *.{py,sh}
 
 ### Step 5: download and install tools : vcftools, mawk, python libraries(numpy,matplotlib,pandas,bioinfokit)
-./download_tools
+./download_tools.sh
 
 ### Step 6: Test tools
-./test_tools
+./test_tools.sh
 
 ### Step 7: filter snps
 ./filter_snps data/snps_indels.vcf.gz
