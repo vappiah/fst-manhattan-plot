@@ -10,6 +10,7 @@ cd manhattan-plots
 
 ### Step 3: verify that data and scripts have been downloaded
 ls 
+
 ls data
 
 ### Step 4: Add execution rights to the scripts
