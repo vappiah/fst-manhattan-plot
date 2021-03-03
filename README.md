@@ -2,6 +2,7 @@
 This repo provides a tutorial on how to create manhattan plots of Population genetics variation measures such as Fixative index(fst) and TajimaD values using Python
 # Description
 the repository contains scripts as well as sample datasets on which the these scripts can be tested on. datasets are in the data directory and comprises of snps data (vcf format) and a list of sample ids (population) saved in text files. Fst values are generated using vcftools which takes as inputs snp data and list of populations on which the comparision is being done . The practice dataset comprises of two subpopulations BAN and GAM.
+The snps data was taken from Pf3K project which can be found on the MalariaGen Database 
 
 
 # Running the Pipeline
