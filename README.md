@@ -1,2 +1,2 @@
-# fst-manhattan-plot
-This repo provides a tutorial on how to plot manhattan plots using Fixative index(fst) values in python
+# manhattan-plots
+This repo provides a tutorial on how to plot manhattan plots using Population genetics variation measures such as Fixative index(fst) and TajimaD,values in python
