@@ -62,4 +62,6 @@ pip3 install -r requirements.txt
 
 deactivate
 
+source add_apps_to_path.sh
+
 
