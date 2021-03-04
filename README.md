@@ -13,25 +13,29 @@ git clone https://github.com/vappiah/manhattan-plots
 ### Step 2: cd to the directory
 cd manhattan-plots
 
-### Step 3: verify that data and scripts have been downloaded
+### Step 3: verify that the scripts have been downloaded
 ls 
-
-ls data
 
 ### Step 4: Add execution rights to the scripts
 chmod +x *.{py,sh}
 
-### Step 5: download and install tools : vcftools, mawk, python libraries(numpy,matplotlib,pandas,bioinfokit)
+### Step 5: download dataa
+./get_data.sh
+
+### Step 6: download and install tools : vcftools, mawk, python libraries(numpy,matplotlib,pandas,bioinfokit)
 ./download_tools.sh
 
-### Step 6: Test tools
+### Step 7: add tools to path
+source add_tools_to_path.sh
+
+### Step 8: Test tools
 ./test_tools.sh
 
-### Step 7: filter snps
+### Step 9: filter snps
 ./filter_snps data/snps_indels.vcf.gz
 
-### Step 8: compute fst values
+### Step 10: compute fst values
 ./get_fst.sh data/BAN.txt data/GAM.txt snps.filtered.vcf.gz
 
-### Generate manhattan plots
+### Step 11: generate manhattan plots
 python plot_fst.py plot_fst data/BAN.txt data/GAM.txt 
