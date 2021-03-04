@@ -61,7 +61,7 @@ pip3 install --upgrade pip
 pip3 install -r requirements.txt
 
 deactivate
-cho "Tools have been installed" 
+echo "Tools have been installed" 
 echo "Please run test_tools.sh to test the installations"
 source add_apps_to_path.sh
 
