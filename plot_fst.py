@@ -11,4 +11,4 @@ df['CHROM_NEWHEADER']=df['CHROM'].apply(lambda i: chroms.index(i)+1)
 selected=df.dropna()
 
 mhat(selected,chr='CHROM_NEWHEADER',fst='WEIR_AND_COCKERHAM_FST',show=False,color=('red','red'))
-print("print plot has been generated")
+print("plot has been generated")
