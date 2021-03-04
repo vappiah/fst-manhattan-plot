@@ -38,4 +38,4 @@ source add_tools_to_path.sh
 ./get_fst.sh data/BAN.txt data/GAM.txt snps.filtered.vcf.gz
 
 ### Step 11: generate manhattan plots
-python plot_fst.py plot_fst data/BAN.txt data/GAM.txt 
+python plot_fst.py plot_fst BAN_vs_GAM.fst.weir.fst
