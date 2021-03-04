@@ -8,7 +8,7 @@ from bioinfokit.visuz import general
 def mhat(df="dataframe", chr=None, fst=None, color=None, dim=(8,4), r=300, ar=None, fst_sign_line=False,
              fst_thresh=0.3, dotsize=8, markeridcol=None, markernames=None, gfont=8, valpha=1, show=False, figtype='png',
              axxlabel=None, axylabel=None, axlabelfontsize=9, axlabelfontname=None, axtickfontsize=9,
-             axtickfontname="Arial", ylm=None, gstyle=1, figname='manhatten'):
+             axtickfontname="Arial", ylm=None, gstyle=1, figname='manhattan'):
 
         _x, _y = 'Chromosomes', r'$ -log_{10}(P)$'
         rand_colors = ('#a7414a', '#282726', '#6a8a82', '#a37c27', '#563838', '#0584f2', '#f28a30', '#f05837',
