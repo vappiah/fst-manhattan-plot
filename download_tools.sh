@@ -63,6 +63,13 @@ pip3 install -r requirements.txt
 deactivate
 echo "Tools have been installed" 
 echo "Please run test_tools.sh to test the installations"
+
+
+
+echo "Tools have been installed"
+echo "Please run the following commands" 
+echo "Run \"source add_apps_to_path.sh\" to add apps to path"
+echo "\"./test_tools.sh\" to test the installations"
 source add_apps_to_path.sh
 
 
