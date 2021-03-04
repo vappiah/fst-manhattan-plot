@@ -66,6 +66,6 @@ echo "Tools have been installed"
 echo "Please run the following commands" 
 echo "Run \"source add_apps_to_path.sh\" to add apps to path"
 echo "Run \"./test_tools.sh\" to test the installations"
-source add_apps_to_path.sh
+
 
 
