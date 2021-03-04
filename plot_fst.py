@@ -10,5 +10,5 @@ chroms.sort()
 df['CHROM_NEWHEADER']=df['CHROM'].apply(lambda i: chroms.index(i)+1)
 selected=df.dropna()
 
-mhat(selected,chr='CHROM_NEWHEADER',fst='WEIR_AND_COCKERHAM_FST',show=False,color=('blue','red'))
+mhat(selected,chr='CHROM_NEWHEADER',fst='WEIR_AND_COCKERHAM_FST',show=False,color=('black','red'))
 print("plot has been generated")
