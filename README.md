@@ -3,7 +3,19 @@ This repo provides a tutorial on how to create manhattan plots of Population gen
 # Description
 the repository contains scripts as well as sample datasets on which the these scripts can be tested on. Datasets can be obtained by running the get_data script. Data comprises of snps data (vcf format) and a list of sample ids (population) saved in text files. Fst values are generated using vcftools which takes as inputs snp data and list of populations on which the comparision is being done . The practice dataset comprises of two subpopulations BAN and GAM.
 The snps data was taken from Pf3K project which can be found on the MalariaGen Database 
-
+# Dependencies
+### Operating system
+    Linux, MACOS
+### Software
+    Python 3.6+
+        pip3
+        virtualenv
+        numpy
+        pandas
+        matplotlib
+        bioinfokit
+     vcftools
+     mawk
 
 # Running the Pipeline
 
